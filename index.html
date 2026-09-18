@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SAVVADI — Make Your Story Heard</title>
-  <meta name="description" content="SAVVADI is a creative and digital solutions company that transforms ideas into digital experiences that connect with people. Websites, Apps, Branding, Media & Strategy." />
-  <meta name="theme-color" content="#090d16" />
+  <meta name="description" content="SAVVADI is an end-to-end creative and digital powerhouse. We engineer high-performance websites and apps, cinematic video production, brand identities, and custom digital solutions." />
+  <meta name="theme-color" content="#07090e" />
 
   <!-- Google Fonts: Syne & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -39,9 +39,9 @@
               amber: '#f59e0b',
             },
             dark: {
-              bg: '#080b12',
-              card: '#0f1422',
-              cardHover: '#141c2e',
+              bg: '#07090e',
+              card: '#0d111c',
+              cardHover: '#131826',
               border: 'rgba(255, 255, 255, 0.08)',
             }
           },
@@ -57,7 +57,7 @@
             },
             'float': {
               '0%, 100%': { transform: 'translateY(0)' },
-              '50%': { transform: 'translateY(-10px)' },
+              '50%': { transform: 'translateY(-8px)' },
             }
           }
         }
@@ -73,51 +73,55 @@
 </head>
 <body class="bg-dark-bg text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white relative overflow-x-hidden min-h-screen">
 
-  <!-- Background Ambient Glow Orbs -->
+  <!-- Interactive Dynamic Cursor Glow (Desktop) -->
+  <div id="cursorGlow" class="cursor-glow hidden md:block"></div>
+
+  <!-- Ambient Glow Orbs -->
   <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-    <div class="glow-orb -top-40 -left-40 w-96 h-96 bg-brand-600/20 blur-[130px] rounded-full"></div>
-    <div class="glow-orb top-1/3 -right-40 w-[30rem] h-[30rem] bg-brand-accent/15 blur-[150px] rounded-full"></div>
-    <div class="glow-orb -bottom-20 left-1/4 w-[28rem] h-[28rem] bg-brand-700/20 blur-[140px] rounded-full"></div>
+    <div class="glow-orb -top-32 -left-32 w-[32rem] h-[32rem] bg-brand-600/15 blur-[140px] rounded-full"></div>
+    <div class="glow-orb top-1/3 -right-32 w-[34rem] h-[34rem] bg-brand-accent/10 blur-[160px] rounded-full"></div>
+    <div class="glow-orb -bottom-24 left-1/3 w-[30rem] h-[30rem] bg-brand-700/15 blur-[150px] rounded-full"></div>
   </div>
 
   <!-- Sticky Glass Navigation -->
-  <header class="sticky top-0 z-50 backdrop-blur-xl bg-dark-bg/80 border-b border-dark-border transition-all duration-300">
+  <header class="sticky top-0 z-40 backdrop-blur-2xl bg-dark-bg/85 border-b border-dark-border transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
       <!-- SAVVADI Brand Mark -->
       <a href="#hero" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 via-brand-500 to-brand-accent flex items-center justify-center font-display font-extrabold text-white text-xl shadow-lg shadow-brand-500/25 group-hover:scale-105 transition-transform">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 via-brand-500 to-brand-accent flex items-center justify-center font-display font-black text-white text-xl shadow-lg shadow-brand-500/30 group-hover:scale-105 transition-transform">
           S
         </div>
         <div class="flex flex-col">
           <span class="font-display text-2xl font-black tracking-wider text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:via-brand-200 group-hover:to-brand-accent transition-all">
             SAVVADI
           </span>
-          <span class="text-[10px] tracking-widest text-slate-400 uppercase -mt-1 font-semibold">
-            Digital & Creative
+          <span class="text-[9px] tracking-[0.2em] text-slate-400 uppercase -mt-1 font-bold">
+            Creative &bull; Digital &bull; Media
           </span>
         </div>
       </a>
 
-      <!-- Desktop Navigation Links -->
-      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
         <a href="#about" class="hover:text-white transition-colors">About</a>
-        <a href="#services" class="hover:text-white transition-colors">What We Do</a>
-        <a href="#approach" class="hover:text-white transition-colors">Approach</a>
+        <a href="#services" class="hover:text-white transition-colors">Capabilities</a>
+        <a href="#approach" class="hover:text-white transition-colors">Our Approach</a>
         <a href="#vision" class="hover:text-white transition-colors">Vision & Mission</a>
+        <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
         <a href="#contact" class="hover:text-white transition-colors">Contact</a>
       </nav>
 
-      <!-- Desktop Quick Actions -->
+      <!-- Desktop Header Actions -->
       <div class="hidden md:flex items-center gap-3">
         <!-- Direct WhatsApp Link -->
-        <a href="https://wa.me/918008226037?text=Hi%20SAVVADI,%20I'd%20like%20to%20discuss%20a%20project!" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl border border-dark-border bg-dark-card hover:bg-dark-cardHover hover:border-emerald-500/40 text-slate-300 hover:text-emerald-400 transition-all flex items-center gap-2 text-xs font-semibold" title="Chat on WhatsApp">
+        <a href="https://wa.me/918008226037?text=Hi%20SAVVADI,%20I'd%20like%20to%20discuss%20a%20project!" target="_blank" rel="noopener noreferrer" class="px-3 py-2 rounded-xl border border-dark-border bg-dark-card hover:bg-dark-cardHover hover:border-emerald-500/40 text-slate-300 hover:text-emerald-400 transition-all flex items-center gap-2 text-xs font-bold" title="Chat on WhatsApp">
           <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
           <span>WhatsApp</span>
         </a>
 
         <!-- Let's Talk CTA button -->
-        <a href="#contact" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-500 hover:to-brand-400 text-white font-semibold text-sm shadow-lg shadow-brand-600/30 hover:shadow-brand-500/40 hover:-translate-y-0.5 transition-all flex items-center gap-2">
+        <a href="#contact" class="btn-shimmer px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-500 hover:to-brand-400 text-white font-bold text-sm shadow-lg shadow-brand-600/30 hover:shadow-brand-500/40 hover:-translate-y-0.5 transition-all flex items-center gap-2">
           <span>Let's Talk</span>
           <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
         </a>
@@ -132,18 +136,19 @@
 
     <!-- Mobile Drawer -->
     <div id="mobileDrawer" class="hidden md:hidden border-b border-dark-border bg-dark-bg/95 backdrop-blur-2xl px-6 py-6 space-y-4">
-      <a href="#about" class="mobile-nav-link block text-base font-medium text-slate-300 hover:text-white">About</a>
-      <a href="#services" class="mobile-nav-link block text-base font-medium text-slate-300 hover:text-white">What We Do</a>
-      <a href="#approach" class="mobile-nav-link block text-base font-medium text-slate-300 hover:text-white">Approach</a>
-      <a href="#vision" class="mobile-nav-link block text-base font-medium text-slate-300 hover:text-white">Vision & Mission</a>
-      <a href="#contact" class="mobile-nav-link block text-base font-medium text-slate-300 hover:text-white">Contact</a>
+      <a href="#about" class="mobile-nav-link block text-base font-semibold text-slate-300 hover:text-white">About</a>
+      <a href="#services" class="mobile-nav-link block text-base font-semibold text-slate-300 hover:text-white">Capabilities</a>
+      <a href="#approach" class="mobile-nav-link block text-base font-semibold text-slate-300 hover:text-white">Our Approach</a>
+      <a href="#vision" class="mobile-nav-link block text-base font-semibold text-slate-300 hover:text-white">Vision & Mission</a>
+      <a href="#faq" class="mobile-nav-link block text-base font-semibold text-slate-300 hover:text-white">FAQ</a>
+      <a href="#contact" class="mobile-nav-link block text-base font-semibold text-slate-300 hover:text-white">Contact</a>
       
       <div class="pt-4 border-t border-dark-border flex flex-col gap-3">
-        <a href="https://wa.me/918008226037?text=Hi%20SAVVADI,%20I'd%20like%20to%20discuss%20a%20project!" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl border border-dark-border bg-dark-card text-emerald-400 flex items-center justify-center gap-2 font-semibold text-sm">
+        <a href="https://wa.me/918008226037?text=Hi%20SAVVADI,%20I'd%20like%20to%20discuss%20a%20project!" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl border border-dark-border bg-dark-card text-emerald-400 flex items-center justify-center gap-2 font-bold text-sm">
           <i data-lucide="message-circle" class="w-4 h-4"></i>
           <span>Chat on WhatsApp</span>
         </a>
-        <a href="#contact" class="mobile-nav-link w-full py-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-sm text-center flex items-center justify-center gap-2 shadow-lg shadow-brand-600/30">
+        <a href="#contact" class="mobile-nav-link w-full py-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-sm text-center flex items-center justify-center gap-2 shadow-lg shadow-brand-600/30">
           <span>Start a Project</span>
           <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>
@@ -154,56 +159,56 @@
   <main class="relative z-10">
 
     <!-- HERO SECTION -->
-    <section id="hero" class="pt-20 pb-24 md:pt-32 md:pb-36 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center relative">
+    <section id="hero" class="pt-20 pb-20 md:pt-32 md:pb-36 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center relative">
       
-      <!-- Brand Pill Tag -->
-      <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-brand-500/30 bg-brand-500/10 text-brand-300 text-xs font-semibold tracking-wider uppercase mb-8 shadow-inner animate-pulse-slow">
+      <!-- Studio Pill Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-500/30 bg-brand-500/10 text-brand-300 text-xs font-bold tracking-wider uppercase mb-8 shadow-inner animate-pulse-slow">
         <span class="w-2 h-2 rounded-full bg-brand-accent animate-ping"></span>
-        <span>Creative & Digital Solutions</span>
+        <span>Creative Storytelling &bull; Modern Technology &bull; Strategic Growth</span>
       </div>
 
-      <!-- Main Tagline & Highlight -->
-      <h1 class="font-display font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white max-w-5xl mx-auto leading-[1.08]">
+      <!-- Main Tagline -->
+      <h1 class="font-display font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white max-w-5xl mx-auto leading-[1.06]">
         Make Your Story <br class="hidden sm:inline" />
         <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-300 via-brand-500 to-brand-accent">
           Heard.
         </span>
       </h1>
 
-      <!-- Brand Narrative / Subheading -->
+      <!-- Elevate narrative copy -->
       <p class="mt-8 text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto font-normal leading-relaxed">
-        <strong class="text-white font-bold tracking-wide">SAVVADI</strong> brings creativity, technology, and strategy together to transform your ideas into digital experiences that connect with people and build lasting presence.
+        At <strong class="text-white font-bold tracking-wide">SAVVADI</strong>, we fuse high-impact creativity, modern engineering, and brand strategy to transform bold ideas into unforgettable digital experiences. From high-converting websites and mobile applications to cinematic visual media and brand identities — we make your presence felt.
       </p>
 
       <!-- Primary Action Buttons -->
       <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
-        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-600 via-brand-500 to-brand-accent hover:opacity-95 text-white font-bold text-base shadow-xl shadow-brand-600/35 hover:shadow-brand-500/50 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2.5">
+        <a href="#contact" class="btn-shimmer w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-600 via-brand-500 to-brand-accent hover:opacity-95 text-white font-bold text-base shadow-xl shadow-brand-600/35 hover:shadow-brand-500/50 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2.5">
           <span>Start Your Project</span>
           <i data-lucide="arrow-right" class="w-5 h-5"></i>
         </a>
-        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-dark-border bg-dark-card/90 hover:bg-dark-cardHover hover:border-slate-600 text-slate-200 font-semibold text-base transition-all flex items-center justify-center gap-2">
-          <span>Explore What We Do</span>
+        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-dark-border bg-dark-card hover:bg-dark-cardHover hover:border-slate-500 text-slate-200 font-bold text-base transition-all flex items-center justify-center gap-2">
+          <span>Explore Capabilities</span>
           <i data-lucide="sparkles" class="w-4 h-4 text-brand-400"></i>
         </a>
       </div>
 
-      <!-- Trust Badges & Highlights Grid -->
+      <!-- Trust Metrics & Badges Grid -->
       <div class="mt-20 pt-10 border-t border-dark-border grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
-        <div class="p-4 rounded-2xl bg-dark-card/50 border border-dark-border/60">
-          <div class="text-brand-accent font-display text-2xl font-bold">End-to-End</div>
-          <div class="text-xs text-slate-400 mt-1">Design, Development & Media Under One Roof</div>
+        <div class="p-5 rounded-2xl bg-dark-card/60 border border-dark-border/70 hover:border-brand-500/30 transition-all">
+          <div class="text-brand-accent font-display text-2xl sm:text-3xl font-black">All-in-One</div>
+          <div class="text-xs text-slate-300 font-semibold mt-1">Design, Code, Media & Strategy Under One Roof</div>
         </div>
-        <div class="p-4 rounded-2xl bg-dark-card/50 border border-dark-border/60">
-          <div class="text-brand-400 font-display text-2xl font-bold">Purpose-Driven</div>
-          <div class="text-xs text-slate-400 mt-1">Creative Ideas Grounded in Real Strategy</div>
+        <div class="p-5 rounded-2xl bg-dark-card/60 border border-dark-border/70 hover:border-brand-500/30 transition-all">
+          <div class="text-brand-400 font-display text-2xl sm:text-3xl font-black">Purpose-Built</div>
+          <div class="text-xs text-slate-300 font-semibold mt-1">Creative Ideas Grounded in Commercial Growth</div>
         </div>
-        <div class="p-4 rounded-2xl bg-dark-card/50 border border-dark-border/60">
-          <div class="text-emerald-400 font-display text-2xl font-bold">Omnichannel</div>
-          <div class="text-xs text-slate-400 mt-1">Web, Mobile, Video & Social Platforms</div>
+        <div class="p-5 rounded-2xl bg-dark-card/60 border border-dark-border/70 hover:border-brand-500/30 transition-all">
+          <div class="text-emerald-400 font-display text-2xl sm:text-3xl font-black">Multi-Platform</div>
+          <div class="text-xs text-slate-300 font-semibold mt-1">Web, Mobile, Cinematic Video & Socials</div>
         </div>
-        <div class="p-4 rounded-2xl bg-dark-card/50 border border-dark-border/60">
-          <div class="text-amber-400 font-display text-2xl font-bold">Human-Centric</div>
-          <div class="text-xs text-slate-400 mt-1">Crafted to Resonate and Build Real Impact</div>
+        <div class="p-5 rounded-2xl bg-dark-card/60 border border-dark-border/70 hover:border-brand-500/30 transition-all">
+          <div class="text-amber-400 font-display text-2xl sm:text-3xl font-black">Human-First</div>
+          <div class="text-xs text-slate-300 font-semibold mt-1">Tailored Solutions Engineered to Resonate</div>
         </div>
       </div>
     </section>
@@ -212,44 +217,44 @@
     <section id="about" class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Left: Brand Identity & Focus -->
+        <!-- Left: Brand Identity & Narrative -->
         <div class="lg:col-span-6 space-y-6">
           <div class="inline-flex items-center gap-2 text-brand-400 text-xs font-bold uppercase tracking-widest">
             <i data-lucide="compass" class="w-4 h-4"></i>
-            <span>About SAVVADI</span>
+            <span>Who We Are</span>
           </div>
 
-          <h2 class="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight leading-tight">
-            Building meaningful and impactful presence in the digital world.
+          <h2 class="font-display font-black text-3xl sm:text-4xl md:text-5xl text-white tracking-tight leading-tight">
+            Building meaningful, lasting presence in an overcrowded digital world.
           </h2>
 
           <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
-            <strong class="text-white font-semibold">SAVVADI</strong> is a creative and digital solutions company dedicated to helping individuals, businesses, organizations, and brands thrive in an increasingly connected landscape.
+            <strong class="text-white font-bold">SAVVADI</strong> is a creative and digital solutions company dedicated to helping individuals, businesses, organizations, and brands build a commanding digital footprint.
           </p>
 
           <p class="text-slate-400 text-base leading-relaxed">
-            We bridge the gap between creative storytelling and modern technology. From designing sleek digital platforms and user-friendly mobile applications to producing compelling video content and establishing distinctive brand identities, <strong class="text-white">SAVVADI</strong> delivers comprehensive digital experiences designed to engage and inspire.
+            We eliminate the friction of managing disconnected agencies. Whether you need a lightning-fast web platform, an intuitive mobile application, compelling video production, or a complete brand identity revamp, <strong class="text-white font-semibold">SAVVADI</strong> acts as your dedicated creative & technology engine.
           </p>
 
-          <!-- Key highlights -->
+          <!-- Core Pillars -->
           <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div class="flex items-start gap-3">
-              <div class="w-8 h-8 rounded-lg bg-brand-500/10 border border-brand-500/20 flex items-center justify-center shrink-0 text-brand-400">
-                <i data-lucide="check" class="w-4 h-4"></i>
+            <div class="p-4 rounded-xl bg-dark-card border border-dark-border flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-brand-500/10 border border-brand-500/25 flex items-center justify-center shrink-0 text-brand-400">
+                <i data-lucide="layers" class="w-4 h-4"></i>
               </div>
               <div>
-                <h4 class="text-sm font-bold text-white">Full-Spectrum Delivery</h4>
-                <p class="text-xs text-slate-400 mt-0.5">Strategy, design, code, and visual production.</p>
+                <h4 class="text-sm font-bold text-white">Holistic Digital Execution</h4>
+                <p class="text-xs text-slate-400 mt-1">Every touchpoint aligns with your core business vision.</p>
               </div>
             </div>
 
-            <div class="flex items-start gap-3">
-              <div class="w-8 h-8 rounded-lg bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center shrink-0 text-brand-accent">
-                <i data-lucide="check" class="w-4 h-4"></i>
+            <div class="p-4 rounded-xl bg-dark-card border border-dark-border flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-brand-accent/10 border border-brand-accent/25 flex items-center justify-center shrink-0 text-brand-accent">
+                <i data-lucide="zap" class="w-4 h-4"></i>
               </div>
               <div>
-                <h4 class="text-sm font-bold text-white">Tailored Solutions</h4>
-                <p class="text-xs text-slate-400 mt-0.5">Custom-built to match your unique brand identity.</p>
+                <h4 class="text-sm font-bold text-white">Speed & Precision</h4>
+                <p class="text-xs text-slate-400 mt-1">Agile sprints that transform concepts into reality fast.</p>
               </div>
             </div>
           </div>
@@ -257,56 +262,57 @@
 
         <!-- Right: Glass Graphic Visual -->
         <div class="lg:col-span-6 relative">
-          <div class="relative rounded-3xl border border-dark-border bg-gradient-to-b from-dark-card/90 to-dark-bg p-8 sm:p-10 shadow-2xl overflow-hidden group">
+          <div class="relative rounded-3xl border border-dark-border bg-gradient-to-b from-dark-card to-dark-bg p-8 sm:p-10 shadow-2xl overflow-hidden group">
             
             <div class="absolute -right-20 -top-20 w-64 h-64 bg-brand-600/20 blur-3xl rounded-full group-hover:bg-brand-500/30 transition-all duration-700"></div>
 
             <div class="space-y-6 relative z-10">
               <div class="flex items-center justify-between pb-6 border-b border-dark-border">
                 <div class="flex items-center gap-3">
-                  <div class="w-12 h-12 rounded-2xl bg-brand-600 flex items-center justify-center text-white font-display font-extrabold text-2xl shadow-lg shadow-brand-600/40">
+                  <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-brand-600 to-brand-accent flex items-center justify-center text-white font-display font-black text-2xl shadow-lg shadow-brand-600/40">
                     S
                   </div>
                   <div>
-                    <h3 class="font-display font-bold text-xl text-white">SAVVADI</h3>
-                    <p class="text-xs text-slate-400 font-medium">Make Your Story Heard</p>
+                    <h3 class="font-display font-black text-xl text-white">SAVVADI</h3>
+                    <p class="text-xs text-brand-300 font-semibold">Make Your Story Heard.</p>
                   </div>
                 </div>
-                <span class="px-3 py-1 rounded-full text-[11px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                  Open for Projects
+                <span class="px-3 py-1 rounded-full text-[11px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  Accepting New Projects
                 </span>
               </div>
 
-              <div class="space-y-4 text-sm text-slate-300">
-                <div class="p-4 rounded-xl bg-dark-bg/60 border border-dark-border flex items-center justify-between">
-                  <span class="flex items-center gap-2.5">
-                    <i data-lucide="layers" class="w-4 h-4 text-brand-400"></i>
-                    Creative & Strategic Alignment
+              <div class="space-y-3.5 text-sm text-slate-300">
+                <div class="p-4 rounded-xl bg-dark-bg/70 border border-dark-border flex items-center justify-between hover:border-brand-500/40 transition-colors">
+                  <span class="flex items-center gap-3 font-medium">
+                    <i data-lucide="code-2" class="w-4 h-4 text-brand-400"></i>
+                    Modern Full-Stack Websites & Apps
                   </span>
-                  <i data-lucide="check-circle" class="w-4 h-4 text-brand-accent"></i>
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
                 </div>
 
-                <div class="p-4 rounded-xl bg-dark-bg/60 border border-dark-border flex items-center justify-between">
-                  <span class="flex items-center gap-2.5">
-                    <i data-lucide="monitor" class="w-4 h-4 text-brand-400"></i>
-                    Modern Digital Experiences
-                  </span>
-                  <i data-lucide="check-circle" class="w-4 h-4 text-brand-accent"></i>
-                </div>
-
-                <div class="p-4 rounded-xl bg-dark-bg/60 border border-dark-border flex items-center justify-between">
-                  <span class="flex items-center gap-2.5">
+                <div class="p-4 rounded-xl bg-dark-bg/70 border border-dark-border flex items-center justify-between hover:border-brand-500/40 transition-colors">
+                  <span class="flex items-center gap-3 font-medium">
                     <i data-lucide="video" class="w-4 h-4 text-brand-400"></i>
-                    Impactful Visual Media
+                    High-Retention Media & Short-Form Content
                   </span>
-                  <i data-lucide="check-circle" class="w-4 h-4 text-brand-accent"></i>
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                </div>
+
+                <div class="p-4 rounded-xl bg-dark-bg/70 border border-dark-border flex items-center justify-between hover:border-brand-500/40 transition-colors">
+                  <span class="flex items-center gap-3 font-medium">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-brand-400"></i>
+                    Brand Systems & Growth Strategy
+                  </span>
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
                 </div>
               </div>
 
               <!-- Direct Call to Connect -->
               <div class="pt-2">
-                <a href="#contact" class="w-full py-3.5 rounded-xl bg-brand-600/20 hover:bg-brand-600/30 border border-brand-500/30 text-brand-300 hover:text-white font-semibold text-sm flex items-center justify-center gap-2 transition-all">
-                  <span>Connect with SAVVADI</span>
+                <a href="#contact" class="w-full py-3.5 rounded-xl bg-brand-600/20 hover:bg-brand-600/35 border border-brand-500/40 text-brand-200 hover:text-white font-bold text-sm flex items-center justify-center gap-2 transition-all">
+                  <span>Connect Directly with SAVVADI</span>
                   <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </a>
               </div>
@@ -317,165 +323,248 @@
       </div>
     </section>
 
-    <!-- WHAT WE DO / SERVICES SECTION -->
+    <!-- CAPABILITIES / SERVICES SECTION WITH INTERACTIVE MODALS -->
     <section id="services" class="py-20 md:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
       
       <!-- Section Header -->
-      <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+      <div class="text-center max-w-3xl mx-auto mb-12">
         <div class="inline-flex items-center gap-2 text-brand-accent text-xs font-bold uppercase tracking-widest mb-3">
           <i data-lucide="sparkles" class="w-4 h-4"></i>
           <span>What We Do</span>
         </div>
         <h2 class="font-display font-black text-3xl sm:text-5xl text-white tracking-tight">
-          Comprehensive Digital & Creative Capabilities
+          Comprehensive Capabilities Under One Roof
         </h2>
         <p class="mt-4 text-slate-300 text-base sm:text-lg">
-          At <strong class="text-white">SAVVADI</strong>, we provide end-to-end solutions designed to build, enhance, and scale your brand across digital touchpoints.
+          Click any card to explore full deliverables, process, and scope details.
         </p>
+
+        <!-- Category Filter Tabs -->
+        <div class="mt-8 inline-flex flex-wrap items-center justify-center gap-2 p-1.5 rounded-2xl bg-dark-card border border-dark-border">
+          <button data-filter="all" class="filter-btn active px-4 py-2 rounded-xl text-xs font-bold transition-all">
+            All Capabilities
+          </button>
+          <button data-filter="dev" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold text-slate-400 hover:text-white transition-all">
+            Web & Apps
+          </button>
+          <button data-filter="media" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold text-slate-400 hover:text-white transition-all">
+            Media & Production
+          </button>
+          <button data-filter="branding" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold text-slate-400 hover:text-white transition-all">
+            Branding & Strategy
+          </button>
+          <button data-filter="tech" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold text-slate-400 hover:text-white transition-all">
+            Custom Tech
+          </button>
+        </div>
       </div>
 
       <!-- Services Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         
         <!-- 1. Website Development -->
-        <div class="service-card group p-8 rounded-3xl bg-dark-card border border-dark-border hover:border-brand-500/50 hover:bg-dark-cardHover transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-brand-600/10 rounded-full blur-2xl group-hover:bg-brand-500/25 transition-all"></div>
-          <div>
-            <div class="w-14 h-14 rounded-2xl bg-brand-500/10 border border-brand-500/25 flex items-center justify-center text-brand-400 group-hover:bg-brand-600 group-hover:text-white transition-all mb-6 shadow-lg">
-              <i data-lucide="globe" class="w-7 h-7"></i>
+        <div class="service-card-wrapper transition-all duration-300" data-category="dev">
+          <div onclick="openServiceModal('web')" class="service-card group p-8 rounded-3xl bg-dark-card border border-dark-border hover:border-brand-500/50 flex flex-col justify-between h-full relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-brand-600/10 rounded-full blur-2xl group-hover:bg-brand-500/25 transition-all"></div>
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-14 h-14 rounded-2xl bg-brand-500/10 border border-brand-500/25 flex items-center justify-center text-brand-400 group-hover:bg-brand-600 group-hover:text-white transition-all shadow-lg">
+                  <i data-lucide="globe" class="w-7 h-7"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-brand-500/10 text-brand-300 border border-brand-500/20">
+                  Engineering
+                </span>
+              </div>
+              <h3 class="font-display font-black text-xl text-white mb-2 group-hover:text-brand-300 transition-colors">
+                Website Development
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Modern, responsive, and purpose-driven websites engineered with speed, aesthetic elegance, and conversion at their core.
+              </p>
             </div>
-            <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-brand-300 transition-colors">
-              Website Development
-            </h3>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              Modern, responsive, and purpose-driven websites built with performance, intuitive user experience, and search optimization at their core.
-            </p>
-          </div>
-          <div class="mt-6 pt-6 border-t border-dark-border/60 flex items-center justify-between text-xs text-slate-400">
-            <span>Responsive &bull; Fast &bull; SEO-Ready</span>
-            <i data-lucide="arrow-right" class="w-4 h-4 text-brand-400 group-hover:translate-x-1 transition-transform"></i>
+            
+            <button type="button" class="w-full mt-6 pt-5 border-t border-dark-border/60 flex items-center justify-between text-xs font-bold text-brand-300 group-hover:text-brand-400 transition-colors">
+              <span>View Deliverables & Scope</span>
+              <div class="w-7 h-7 rounded-lg bg-brand-500/10 flex items-center justify-center group-hover:bg-brand-500 group-hover:text-white transition-all">
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </div>
+            </button>
           </div>
         </div>
 
         <!-- 2. App Development -->
-        <div class="service-card group p-8 rounded-3xl bg-dark-card border border-dark-border hover:border-brand-accent/50 hover:bg-dark-cardHover transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-brand-accent/10 rounded-full blur-2xl group-hover:bg-brand-accent/25 transition-all"></div>
-          <div>
-            <div class="w-14 h-14 rounded-2xl bg-brand-accent/10 border border-brand-accent/25 flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-dark-bg transition-all mb-6 shadow-lg">
-              <i data-lucide="smartphone" class="w-7 h-7"></i>
+        <div class="service-card-wrapper transition-all duration-300" data-category="dev">
+          <div onclick="openServiceModal('app')" class="service-card group p-8 rounded-3xl bg-dark-card border border-dark-border hover:border-brand-accent/50 flex flex-col justify-between h-full relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-brand-accent/10 rounded-full blur-2xl group-hover:bg-brand-accent/25 transition-all"></div>
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-14 h-14 rounded-2xl bg-brand-accent/10 border border-brand-accent/25 flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-dark-bg transition-all shadow-lg">
+                  <i data-lucide="smartphone" class="w-7 h-7"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-brand-accent/10 text-brand-accent border border-brand-accent/20">
+                  Mobile
+                </span>
+              </div>
+              <h3 class="font-display font-black text-xl text-white mb-2 group-hover:text-brand-accent transition-colors">
+                App Development
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                User-friendly mobile and digital applications engineered for smooth interactions, robust architecture, and cross-device performance.
+              </p>
             </div>
-            <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-brand-accent transition-colors">
-              App Development
-            </h3>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              User-friendly mobile and digital applications engineered for smooth interactions, robust architecture, and seamless cross-device performance.
-            </p>
-          </div>
-          <div class="mt-6 pt-6 border-t border-dark-border/60 flex items-center justify-between text-xs text-slate-400">
-            <span>iOS &bull; Android &bull; Web Apps</span>
-            <i data-lucide="arrow-right" class="w-4 h-4 text-brand-accent group-hover:translate-x-1 transition-transform"></i>
+            
+            <button type="button" class="w-full mt-6 pt-5 border-t border-dark-border/60 flex items-center justify-between text-xs font-bold text-brand-accent transition-colors">
+              <span>View Deliverables & Scope</span>
+              <div class="w-7 h-7 rounded-lg bg-brand-accent/10 flex items-center justify-center group-hover:bg-brand-accent group-hover:text-dark-bg transition-all">
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </div>
+            </button>
           </div>
         </div>
 
         <!-- 3. Social Media Management -->
-        <div class="service-card group p-8 rounded-3xl bg-dark-card border border-dark-border hover:border-pink-500/50 hover:bg-dark-cardHover transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-pink-500/10 rounded-full blur-2xl group-hover:bg-pink-500/25 transition-all"></div>
-          <div>
-            <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/25 flex items-center justify-center text-pink-400 group-hover:bg-pink-600 group-hover:text-white transition-all mb-6 shadow-lg">
-              <i data-lucide="share-2" class="w-7 h-7"></i>
+        <div class="service-card-wrapper transition-all duration-300" data-category="branding">
+          <div onclick="openServiceModal('social')" class="service-card group p-8 rounded-3xl bg-dark-card border border-dark-border hover:border-pink-500/50 flex flex-col justify-between h-full relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-pink-500/10 rounded-full blur-2xl group-hover:bg-pink-500/25 transition-all"></div>
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/25 flex items-center justify-center text-pink-400 group-hover:bg-pink-600 group-hover:text-white transition-all shadow-lg">
+                  <i data-lucide="share-2" class="w-7 h-7"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-pink-500/10 text-pink-400 border border-pink-500/20">
+                  Growth
+                </span>
+              </div>
+              <h3 class="font-display font-black text-xl text-white mb-2 group-hover:text-pink-300 transition-colors">
+                Social Media Management
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Strategic content planning, brand scheduling, and community curation that builds loyal audiences and authentic engagement.
+              </p>
             </div>
-            <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-pink-300 transition-colors">
-              Social Media Management
-            </h3>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              Strategic content planning, brand scheduling, community engagement, and digital presence management that drives meaningful audience connection.
-            </p>
-          </div>
-          <div class="mt-6 pt-6 border-t border-dark-border/60 flex items-center justify-between text-xs text-slate-400">
-            <span>Growth &bull; Content Strategy &bull; Reach</span>
-            <i data-lucide="arrow-right" class="w-4 h-4 text-pink-400 group-hover:translate-x-1 transition-transform"></i>
+            
+            <button type="button" class="w-full mt-6 pt-5 border-t border-dark-border/60 flex items-center justify-between text-xs font-bold text-pink-400 transition-colors">
+              <span>View Deliverables & Scope</span>
+              <div class="w-7 h-7 rounded-lg bg-pink-500/10 flex items-center justify-center group-hover:bg-pink-600 group-hover:text-white transition-all">
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </div>
+            </button>
           </div>
         </div>
 
         <!-- 4. Photography & Videography -->
-        <div class="service-card group p-8 rounded-3xl bg-dark-card border border-dark-border hover:border-amber-500/50 hover:bg-dark-cardHover transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl group-hover:bg-amber-500/25 transition-all"></div>
-          <div>
-            <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/25 flex items-center justify-center text-amber-400 group-hover:bg-amber-500 group-hover:text-dark-bg transition-all mb-6 shadow-lg">
-              <i data-lucide="camera" class="w-7 h-7"></i>
+        <div class="service-card-wrapper transition-all duration-300" data-category="media">
+          <div onclick="openServiceModal('photo')" class="service-card group p-8 rounded-3xl bg-dark-card border border-dark-border hover:border-amber-500/50 flex flex-col justify-between h-full relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl group-hover:bg-amber-500/25 transition-all"></div>
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/25 flex items-center justify-center text-amber-400 group-hover:bg-amber-500 group-hover:text-dark-bg transition-all shadow-lg">
+                  <i data-lucide="camera" class="w-7 h-7"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                  Production
+                </span>
+              </div>
+              <h3 class="font-display font-black text-xl text-white mb-2 group-hover:text-amber-300 transition-colors">
+                Photography & Videography
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Commercial-grade imagery and cinematic video production capturing the personality and authority of your brand.
+              </p>
             </div>
-            <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-amber-300 transition-colors">
-              Photography & Videography
-            </h3>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              High-caliber visual content capturing the personality of your brand, products, events, and stories with professional composition and lighting.
-            </p>
-          </div>
-          <div class="mt-6 pt-6 border-t border-dark-border/60 flex items-center justify-between text-xs text-slate-400">
-            <span>Commercial &bull; Brand Story &bull; Studio</span>
-            <i data-lucide="arrow-right" class="w-4 h-4 text-amber-400 group-hover:translate-x-1 transition-transform"></i>
+            
+            <button type="button" class="w-full mt-6 pt-5 border-t border-dark-border/60 flex items-center justify-between text-xs font-bold text-amber-400 transition-colors">
+              <span>View Deliverables & Scope</span>
+              <div class="w-7 h-7 rounded-lg bg-amber-500/10 flex items-center justify-center group-hover:bg-amber-500 group-hover:text-dark-bg transition-all">
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </div>
+            </button>
           </div>
         </div>
 
         <!-- 5. Video Editing & Content Creation -->
-        <div class="service-card group p-8 rounded-3xl bg-dark-card border border-dark-border hover:border-red-500/50 hover:bg-dark-cardHover transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full blur-2xl group-hover:bg-red-500/25 transition-all"></div>
-          <div>
-            <div class="w-14 h-14 rounded-2xl bg-red-500/10 border border-red-500/25 flex items-center justify-center text-red-400 group-hover:bg-red-600 group-hover:text-white transition-all mb-6 shadow-lg">
-              <i data-lucide="film" class="w-7 h-7"></i>
+        <div class="service-card-wrapper transition-all duration-300" data-category="media">
+          <div onclick="openServiceModal('video')" class="service-card group p-8 rounded-3xl bg-dark-card border border-dark-border hover:border-red-500/50 flex flex-col justify-between h-full relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full blur-2xl group-hover:bg-red-500/25 transition-all"></div>
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-14 h-14 rounded-2xl bg-red-500/10 border border-red-500/25 flex items-center justify-center text-red-400 group-hover:bg-red-600 group-hover:text-white transition-all shadow-lg">
+                  <i data-lucide="film" class="w-7 h-7"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-red-500/10 text-red-400 border border-red-500/20">
+                  Viral Media
+                </span>
+              </div>
+              <h3 class="font-display font-black text-xl text-white mb-2 group-hover:text-red-300 transition-colors">
+                Video Editing & Content Creation
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Dynamic, fast-paced, high-retention video content crafted specifically for modern algorithmic feeds (Reels, Shorts, Promos).
+              </p>
             </div>
-            <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-red-300 transition-colors">
-              Video Editing & Content Creation
-            </h3>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              Engaging, pacing-tuned video content tailored for today's dynamic digital platforms (Reels, Shorts, Promos, Brand Films, Commercials).
-            </p>
-          </div>
-          <div class="mt-6 pt-6 border-t border-dark-border/60 flex items-center justify-between text-xs text-slate-400">
-            <span>Reels &bull; YouTube &bull; Commercials</span>
-            <i data-lucide="arrow-right" class="w-4 h-4 text-red-400 group-hover:translate-x-1 transition-transform"></i>
+            
+            <button type="button" class="w-full mt-6 pt-5 border-t border-dark-border/60 flex items-center justify-between text-xs font-bold text-red-400 transition-colors">
+              <span>View Deliverables & Scope</span>
+              <div class="w-7 h-7 rounded-lg bg-red-500/10 flex items-center justify-center group-hover:bg-red-600 group-hover:text-white transition-all">
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </div>
+            </button>
           </div>
         </div>
 
         <!-- 6. Branding & Creative Design -->
-        <div class="service-card group p-8 rounded-3xl bg-dark-card border border-dark-border hover:border-purple-500/50 hover:bg-dark-cardHover transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/25 transition-all"></div>
-          <div>
-            <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/25 flex items-center justify-center text-purple-400 group-hover:bg-purple-600 group-hover:text-white transition-all mb-6 shadow-lg">
-              <i data-lucide="palette" class="w-7 h-7"></i>
+        <div class="service-card-wrapper transition-all duration-300" data-category="branding">
+          <div onclick="openServiceModal('branding')" class="service-card group p-8 rounded-3xl bg-dark-card border border-dark-border hover:border-purple-500/50 flex flex-col justify-between h-full relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/25 transition-all"></div>
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/25 flex items-center justify-center text-purple-400 group-hover:bg-purple-600 group-hover:text-white transition-all shadow-lg">
+                  <i data-lucide="palette" class="w-7 h-7"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                  Identity
+                </span>
+              </div>
+              <h3 class="font-display font-black text-xl text-white mb-2 group-hover:text-purple-300 transition-colors">
+                Branding & Creative Design
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Iconic logos, thoughtful typography systems, and comprehensive style guides that articulate your brand's unique ethos.
+              </p>
             </div>
-            <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-purple-300 transition-colors">
-              Branding & Creative Design
-            </h3>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              Distinct visual identities, logos, brand guides, typography systems, and creative assets that communicate your brand values instantly.
-            </p>
-          </div>
-          <div class="mt-6 pt-6 border-t border-dark-border/60 flex items-center justify-between text-xs text-slate-400">
-            <span>Identity &bull; Logo &bull; Design Systems</span>
-            <i data-lucide="arrow-right" class="w-4 h-4 text-purple-400 group-hover:translate-x-1 transition-transform"></i>
+            
+            <button type="button" class="w-full mt-6 pt-5 border-t border-dark-border/60 flex items-center justify-between text-xs font-bold text-purple-400 transition-colors">
+              <span>View Deliverables & Scope</span>
+              <div class="w-7 h-7 rounded-lg bg-purple-500/10 flex items-center justify-center group-hover:bg-purple-600 group-hover:text-white transition-all">
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </div>
+            </button>
           </div>
         </div>
 
         <!-- 7. Digital Solutions (Wide Feature Card) -->
-        <div class="service-card group p-8 rounded-3xl bg-gradient-to-br from-dark-card via-dark-card to-brand-950/40 border border-dark-border hover:border-brand-500/50 hover:bg-dark-cardHover transition-all duration-300 md:col-span-2 lg:col-span-3 flex flex-col md:flex-row md:items-center justify-between gap-6 relative overflow-hidden">
-          <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-brand-500/15 rounded-full blur-3xl"></div>
-          <div class="max-w-2xl">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-300 text-xs font-semibold mb-4 border border-brand-500/20">
-              <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
-              <span>Custom Technology</span>
+        <div class="service-card-wrapper transition-all duration-300 md:col-span-2 lg:col-span-3" data-category="tech">
+          <div onclick="openServiceModal('digital')" class="service-card group p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-dark-card via-dark-card to-brand-950/40 border border-dark-border hover:border-brand-500/50 flex flex-col md:flex-row md:items-center justify-between gap-6 relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-56 h-56 bg-brand-500/15 rounded-full blur-3xl"></div>
+            <div class="max-w-2xl">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-300 text-xs font-bold mb-4 border border-brand-500/20">
+                <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+                <span>Bespoke Technology</span>
+              </div>
+              <h3 class="font-display font-black text-2xl sm:text-3xl text-white mb-2">
+                Tailored Digital Solutions
+              </h3>
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                Custom software integrations, workflow automations, and purpose-built digital architectures engineered specifically to solve your operational bottlenecks.
+              </p>
             </div>
-            <h3 class="font-display font-bold text-2xl text-white mb-2">
-              Tailored Digital Solutions
-            </h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              Customized technology and creative workflows engineered around your specific challenges. From digital automation and CRM integrations to interactive customer portals, <strong class="text-white">SAVVADI</strong> builds solutions that scale.
-            </p>
+            <div class="shrink-0">
+              <span class="btn-shimmer px-6 py-3.5 rounded-xl bg-brand-600 group-hover:bg-brand-500 text-white font-bold text-sm inline-flex items-center gap-2 shadow-lg shadow-brand-600/30 transition-all">
+                <span>Explore Technical Scope</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </span>
+            </div>
           </div>
-          <a href="#contact" class="px-6 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-sm shrink-0 flex items-center justify-center gap-2 shadow-lg shadow-brand-600/30 transition-all">
-            <span>Consult on Digital Solutions</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
         </div>
 
       </div>
@@ -486,13 +575,13 @@
       <div class="max-w-3xl mb-16">
         <div class="inline-flex items-center gap-2 text-brand-300 text-xs font-bold uppercase tracking-widest mb-3">
           <i data-lucide="git-merge" class="w-4 h-4"></i>
-          <span>Our Approach</span>
+          <span>Our Methodology</span>
         </div>
         <h2 class="font-display font-black text-3xl sm:text-5xl text-white tracking-tight">
-          Every idea has a story. Every story deserves to be heard.
+          Every idea has a story.<br />Every story deserves to be heard.
         </h2>
         <p class="mt-4 text-slate-300 text-base sm:text-lg leading-relaxed">
-          At <strong class="text-white">SAVVADI</strong>, we don't believe in generic formulas. We work closely with our clients to understand their vision, identify their needs, and engineer solutions that are both artistically creative and commercially practical.
+          At <strong class="text-white">SAVVADI</strong>, we don't believe in generic templates. We work hand-in-hand with our clients to understand their vision, identify core audience needs, and craft solutions that are both artistically inspiring and commercially practical.
         </p>
       </div>
 
@@ -500,52 +589,52 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
         <div class="p-8 rounded-3xl bg-dark-card border border-dark-border relative group hover:border-brand-500/40 transition-all">
-          <div class="text-6xl font-display font-extrabold text-slate-800/80 group-hover:text-brand-500/20 transition-colors mb-4">
+          <div class="text-6xl font-display font-black text-slate-800/90 group-hover:text-brand-500/30 transition-colors mb-4">
             01
           </div>
-          <h3 class="font-display font-bold text-xl text-white mb-3">
+          <h3 class="font-display font-black text-xl text-white mb-3">
             Understand & Discover
           </h3>
-          <p class="text-slate-400 text-sm leading-relaxed">
-            We delve into your goals, audience demographics, and core brand values to uncover what makes your story truly distinct and impactful.
+          <p class="text-slate-300 text-sm leading-relaxed">
+            We analyze your mission, study your competitive space, and clarify what makes your offering special before touching a single line of code or design file.
           </p>
         </div>
 
         <div class="p-8 rounded-3xl bg-dark-card border border-dark-border relative group hover:border-brand-accent/40 transition-all">
-          <div class="text-6xl font-display font-extrabold text-slate-800/80 group-hover:text-brand-accent/20 transition-colors mb-4">
+          <div class="text-6xl font-display font-black text-slate-800/90 group-hover:text-brand-accent/30 transition-colors mb-4">
             02
           </div>
-          <h3 class="font-display font-bold text-xl text-white mb-3">
+          <h3 class="font-display font-black text-xl text-white mb-3">
             Craft & Engineer
           </h3>
-          <p class="text-slate-400 text-sm leading-relaxed">
-            We design, develop, and produce high-performance websites, apps, and media with precision attention to UX, aesthetics, and reliability.
+          <p class="text-slate-300 text-sm leading-relaxed">
+            We produce high-performance platforms, brand assets, and media with surgical attention to UX, aesthetics, and reliability across modern devices.
           </p>
         </div>
 
         <div class="p-8 rounded-3xl bg-dark-card border border-dark-border relative group hover:border-emerald-500/40 transition-all">
-          <div class="text-6xl font-display font-extrabold text-slate-800/80 group-hover:text-emerald-500/20 transition-colors mb-4">
+          <div class="text-6xl font-display font-black text-slate-800/90 group-hover:text-emerald-500/30 transition-colors mb-4">
             03
           </div>
-          <h3 class="font-display font-bold text-xl text-white mb-3">
+          <h3 class="font-display font-black text-xl text-white mb-3">
             Launch & Amplify
           </h3>
-          <p class="text-slate-400 text-sm leading-relaxed">
-            We deploy and amplify your digital presence, ensuring your brand connects powerfully with audiences across all relevant platforms.
+          <p class="text-slate-300 text-sm leading-relaxed">
+            We launch your presence smoothly, ensuring your message connects powerfully and resonates with your target audience across all digital channels.
           </p>
         </div>
 
       </div>
 
-      <!-- Narrative Banner -->
-      <div class="mt-12 p-8 rounded-3xl bg-gradient-to-r from-brand-950/60 to-dark-card border border-brand-500/30 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <!-- Turning Vision Into Reality Banner -->
+      <div class="mt-12 p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-brand-950/70 to-dark-card border border-brand-500/30 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
         <div>
-          <h4 class="font-display font-bold text-xl text-white">Turning Vision Into Digital Reality</h4>
-          <p class="text-slate-300 text-sm mt-1 max-w-2xl">
-            Whether you are launching a new business, building a brand, creating an online presence, or looking for better ways to connect with your audience, <strong class="text-white">SAVVADI</strong> is your strategic partner.
+          <h4 class="font-display font-black text-2xl text-white">Turning Vision Into Digital Reality</h4>
+          <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-2xl leading-relaxed">
+            Whether you are launching a new company, building a brand from scratch, establishing a modern web presence, or looking for high-converting media, <strong class="text-white">SAVVADI</strong> turns your vision into digital reality.
           </p>
         </div>
-        <a href="#contact" class="px-6 py-3 rounded-xl bg-white text-dark-bg hover:bg-slate-200 font-bold text-sm shrink-0 transition-all shadow-md">
+        <a href="#contact" class="btn-shimmer px-8 py-4 rounded-xl bg-white text-dark-bg hover:bg-slate-100 font-extrabold text-sm shrink-0 transition-all shadow-lg">
           Start With SAVVADI
         </a>
       </div>
@@ -557,44 +646,101 @@
       <div class="text-center max-w-3xl mx-auto mb-16">
         <div class="inline-flex items-center gap-2 text-brand-400 text-xs font-bold uppercase tracking-widest mb-3">
           <i data-lucide="target" class="w-4 h-4"></i>
-          <span>Our Direction</span>
+          <span>Our North Star</span>
         </div>
         <h2 class="font-display font-black text-3xl sm:text-5xl text-white tracking-tight">
           Our Vision & Mission
         </h2>
         <p class="mt-4 text-slate-300 text-base sm:text-lg">
-          The driving purpose and commitment behind every project executed by <strong class="text-white">SAVVADI</strong>.
+          The driving conviction behind every creative decision and technological solution at <strong class="text-white">SAVVADI</strong>.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
         <!-- Vision Card -->
-        <div class="p-8 sm:p-12 rounded-3xl bg-dark-card border border-dark-border relative overflow-hidden group hover:border-brand-500/40 transition-all">
+        <div class="p-8 sm:p-12 rounded-3xl bg-dark-card border border-dark-border relative overflow-hidden group hover:border-brand-500/50 transition-all">
           <div class="w-14 h-14 rounded-2xl bg-brand-500/10 border border-brand-500/25 flex items-center justify-center text-brand-400 mb-8 shadow-lg">
             <i data-lucide="eye" class="w-7 h-7"></i>
           </div>
-          <span class="text-xs font-bold tracking-widest text-brand-accent uppercase">The Big Picture</span>
-          <h3 class="font-display font-extrabold text-2xl sm:text-3xl text-white mt-2 mb-4">
+          <span class="text-xs font-extrabold tracking-widest text-brand-accent uppercase">The Long-Term Horizon</span>
+          <h3 class="font-display font-black text-2xl sm:text-3xl text-white mt-2 mb-4">
             Our Vision
           </h3>
-          <p class="text-slate-300 text-base sm:text-lg leading-relaxed font-light">
-            "To build a creative and technology-driven company that enables people and businesses to <span class="text-white font-medium">create, connect, and grow</span> in the digital world."
+          <p class="text-slate-200 text-base sm:text-lg leading-relaxed font-normal">
+            "To build a creative and technology-driven company that enables people and businesses to <span class="text-white font-bold underline decoration-brand-500 decoration-2 underline-offset-4">create, connect, and grow</span> in the digital world."
           </p>
         </div>
 
         <!-- Mission Card -->
-        <div class="p-8 sm:p-12 rounded-3xl bg-dark-card border border-dark-border relative overflow-hidden group hover:border-brand-accent/40 transition-all">
+        <div class="p-8 sm:p-12 rounded-3xl bg-dark-card border border-dark-border relative overflow-hidden group hover:border-brand-accent/50 transition-all">
           <div class="w-14 h-14 rounded-2xl bg-brand-accent/10 border border-brand-accent/25 flex items-center justify-center text-brand-accent mb-8 shadow-lg">
             <i data-lucide="zap" class="w-7 h-7"></i>
           </div>
-          <span class="text-xs font-bold tracking-widest text-brand-accent uppercase">Our Everyday Commitment</span>
-          <h3 class="font-display font-extrabold text-2xl sm:text-3xl text-white mt-2 mb-4">
+          <span class="text-xs font-extrabold tracking-widest text-brand-accent uppercase">Our Daily Standard</span>
+          <h3 class="font-display font-black text-2xl sm:text-3xl text-white mt-2 mb-4">
             Our Mission
           </h3>
-          <p class="text-slate-300 text-base sm:text-lg leading-relaxed font-light">
-            "To deliver <span class="text-white font-medium">accessible, innovative, and impactful</span> digital solutions by combining technology, creativity, and human ideas."
+          <p class="text-slate-200 text-base sm:text-lg leading-relaxed font-normal">
+            "To deliver <span class="text-white font-bold underline decoration-brand-accent decoration-2 underline-offset-4">accessible, innovative, and impactful</span> digital solutions by combining technology, creativity, and human ideas."
           </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ SECTION (INTERACTIVE ACCORDIONS) -->
+    <section id="faq" class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto relative border-t border-dark-border/80">
+      <div class="text-center mb-14">
+        <div class="inline-flex items-center gap-2 text-brand-accent text-xs font-bold uppercase tracking-widest mb-3">
+          <i data-lucide="help-circle" class="w-4 h-4"></i>
+          <span>Frequently Asked Questions</span>
+        </div>
+        <h2 class="font-display font-black text-3xl sm:text-4xl text-white tracking-tight">
+          Everything You Need to Know
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        
+        <div class="accordion-item p-6 rounded-2xl bg-dark-card border border-dark-border transition-all">
+          <div class="accordion-header flex items-center justify-between cursor-pointer">
+            <h4 class="font-display font-bold text-base sm:text-lg text-white">What makes SAVVADI different from other agencies?</h4>
+            <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-brand-400 transition-transform duration-300 shrink-0 ml-4"></i>
+          </div>
+          <div class="accordion-content text-sm text-slate-300 mt-0 pt-0 leading-relaxed">
+            <p class="pt-4">SAVVADI unites creative storytelling and modern software engineering under one roof. Instead of juggling separate design agencies, web developers, and media creators, we provide a unified, seamless end-to-end partner for all your digital needs.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item p-6 rounded-2xl bg-dark-card border border-dark-border transition-all">
+          <div class="accordion-header flex items-center justify-between cursor-pointer">
+            <h4 class="font-display font-bold text-base sm:text-lg text-white">How quickly can we start and launch a project?</h4>
+            <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-brand-400 transition-transform duration-300 shrink-0 ml-4"></i>
+          </div>
+          <div class="accordion-content text-sm text-slate-300 mt-0 pt-0 leading-relaxed">
+            <p class="pt-4">We kick off with an immediate discovery call to map out requirements. Landing pages and branding sprints typically deliver within 1 to 2 weeks, while custom mobile apps and full-scale platforms operate on structured bi-weekly milestones.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item p-6 rounded-2xl bg-dark-card border border-dark-border transition-all">
+          <div class="accordion-header flex items-center justify-between cursor-pointer">
+            <h4 class="font-display font-bold text-base sm:text-lg text-white">Can SAVVADI tailor packages to our specific budget?</h4>
+            <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-brand-400 transition-transform duration-300 shrink-0 ml-4"></i>
+          </div>
+          <div class="accordion-content text-sm text-slate-300 mt-0 pt-0 leading-relaxed">
+            <p class="pt-4">Yes. Whether you are an early-stage founder needing an initial brand identity and landing page or an established enterprise requiring ongoing media production and app development, we design modular packages that align with your growth stage.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item p-6 rounded-2xl bg-dark-card border border-dark-border transition-all">
+          <div class="accordion-header flex items-center justify-between cursor-pointer">
+            <h4 class="font-display font-bold text-base sm:text-lg text-white">How do we get started?</h4>
+            <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-brand-400 transition-transform duration-300 shrink-0 ml-4"></i>
+          </div>
+          <div class="accordion-content text-sm text-slate-300 mt-0 pt-0 leading-relaxed">
+            <p class="pt-4">Simply reach out via WhatsApp (+91 8008226037), phone call, email, or fill out the contact form below. We'll respond promptly to understand your vision and outline next steps.</p>
+          </div>
         </div>
 
       </div>
@@ -606,29 +752,29 @@
       <div class="text-center max-w-3xl mx-auto mb-16">
         <div class="inline-flex items-center gap-2 text-emerald-400 text-xs font-bold uppercase tracking-widest mb-3">
           <i data-lucide="phone-call" class="w-4 h-4"></i>
-          <span>Get in Touch</span>
+          <span>Direct Contact Channels</span>
         </div>
         <h2 class="font-display font-black text-3xl sm:text-5xl text-white tracking-tight">
           Ready to Make Your Story Heard?
         </h2>
         <p class="mt-4 text-slate-300 text-base sm:text-lg">
-          Reach out to <strong class="text-white">SAVVADI</strong> directly via Phone, WhatsApp, Email, or Instagram. We are ready to build something remarkable with you.
+          Reach out to <strong class="text-white">SAVVADI</strong> directly. We are ready to build something remarkable with you.
         </p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         
-        <!-- Left: Quick Direct Action Contact Cards -->
+        <!-- Left: Direct Action Channels -->
         <div class="lg:col-span-6 space-y-4">
           
           <!-- Phone Card -->
-          <div class="p-6 rounded-2xl bg-dark-card border border-dark-border hover:border-slate-600 transition-all flex items-center justify-between group">
+          <div class="p-6 rounded-2xl bg-dark-card border border-dark-border hover:border-slate-500 transition-all flex items-center justify-between group">
             <div class="flex items-center gap-4">
               <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/25 flex items-center justify-center text-blue-400 shrink-0">
                 <i data-lucide="phone" class="w-5 h-5"></i>
               </div>
               <div>
-                <span class="text-xs text-slate-400 font-medium uppercase tracking-wider">Direct Call</span>
+                <span class="text-xs text-slate-400 font-bold uppercase tracking-wider">Direct Voice Call</span>
                 <div class="text-lg font-bold text-white tracking-wide">8008226037</div>
               </div>
             </div>
@@ -650,12 +796,12 @@
                 <i data-lucide="message-circle" class="w-5 h-5"></i>
               </div>
               <div>
-                <span class="text-xs text-slate-400 font-medium uppercase tracking-wider">Instant Chat</span>
+                <span class="text-xs text-slate-400 font-bold uppercase tracking-wider">Instant WhatsApp Chat</span>
                 <div class="text-lg font-bold text-white tracking-wide">+91 8008226037</div>
               </div>
             </div>
             <a href="https://wa.me/918008226037?text=Hi%20SAVVADI,%20I'd%20like%20to%20discuss%20a%20project!" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all flex items-center gap-1.5 shadow-lg shadow-emerald-600/25">
-              <span>WhatsApp</span>
+              <span>Chat Now</span>
               <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
@@ -667,7 +813,7 @@
                 <i data-lucide="mail" class="w-5 h-5"></i>
               </div>
               <div class="truncate">
-                <span class="text-xs text-slate-400 font-medium uppercase tracking-wider">Official Email</span>
+                <span class="text-xs text-slate-400 font-bold uppercase tracking-wider">Direct Email</span>
                 <div class="text-sm sm:text-base font-bold text-white truncate">savvadi.studios@gmail.com</div>
               </div>
             </div>
@@ -689,7 +835,7 @@
                 <i data-lucide="instagram" class="w-5 h-5"></i>
               </div>
               <div>
-                <span class="text-xs text-slate-400 font-medium uppercase tracking-wider">Instagram</span>
+                <span class="text-xs text-slate-400 font-bold uppercase tracking-wider">Official Instagram</span>
                 <div class="text-lg font-bold text-white tracking-wide">@savvadi_studios</div>
               </div>
             </div>
@@ -701,24 +847,24 @@
 
         </div>
 
-        <!-- Right: Interactive Project Inquiry Form -->
+        <!-- Right: Inquiry Form -->
         <div class="lg:col-span-6 p-8 sm:p-10 rounded-3xl bg-dark-card border border-dark-border relative">
-          <h3 class="font-display font-bold text-2xl text-white mb-2">Send a Message</h3>
-          <p class="text-slate-400 text-sm mb-6">Tell us about your idea or project, and we will get back to you promptly.</p>
+          <h3 class="font-display font-black text-2xl text-white mb-2">Send a Message</h3>
+          <p class="text-slate-400 text-sm mb-6">Brief us on your goals, and SAVVADI will get back to you within 24 hours.</p>
 
           <form id="contactForm" class="space-y-4">
             <div>
-              <label for="name" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Your Name</label>
+              <label for="name" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Your Name</label>
               <input type="text" id="name" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-dark-bg border border-dark-border focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-white text-sm placeholder:text-slate-600 outline-none transition-all" />
             </div>
 
             <div>
-              <label for="contactMethod" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Your Email or Phone</label>
-              <input type="text" id="contactMethod" required placeholder="name@example.com or phone number" class="w-full px-4 py-3 rounded-xl bg-dark-bg border border-dark-border focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-white text-sm placeholder:text-slate-600 outline-none transition-all" />
+              <label for="contactMethod" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Email or Phone Number</label>
+              <input type="text" id="contactMethod" required placeholder="name@example.com or +91..." class="w-full px-4 py-3 rounded-xl bg-dark-bg border border-dark-border focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-white text-sm placeholder:text-slate-600 outline-none transition-all" />
             </div>
 
             <div>
-              <label for="serviceType" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Service Interested In</label>
+              <label for="serviceType" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Service of Interest</label>
               <select id="serviceType" class="w-full px-4 py-3 rounded-xl bg-dark-bg border border-dark-border focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-white text-sm outline-none transition-all">
                 <option value="Website Development">Website Development</option>
                 <option value="App Development">App Development</option>
@@ -726,16 +872,16 @@
                 <option value="Photography & Videography">Photography & Videography</option>
                 <option value="Video Editing & Content Creation">Video Editing & Content Creation</option>
                 <option value="Branding & Creative Design">Branding & Creative Design</option>
-                <option value="Digital Solutions">Digital Solutions / Other</option>
+                <option value="Digital Solutions">Custom Digital Solutions</option>
               </select>
             </div>
 
             <div>
-              <label for="message" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Project Details</label>
-              <textarea id="message" rows="4" required placeholder="Briefly describe what you're looking to build or create..." class="w-full px-4 py-3 rounded-xl bg-dark-bg border border-dark-border focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-white text-sm placeholder:text-slate-600 outline-none transition-all resize-none"></textarea>
+              <label for="message" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Tell Us About Your Project</label>
+              <textarea id="message" rows="4" required placeholder="What are your goals, timeline, or key requirements?..." class="w-full px-4 py-3 rounded-xl bg-dark-bg border border-dark-border focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-white text-sm placeholder:text-slate-600 outline-none transition-all resize-none"></textarea>
             </div>
 
-            <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 via-brand-500 to-brand-accent hover:opacity-95 text-white font-bold text-sm shadow-lg shadow-brand-600/30 transition-all flex items-center justify-center gap-2">
+            <button type="submit" class="btn-shimmer w-full py-4 rounded-xl bg-gradient-to-r from-brand-600 via-brand-500 to-brand-accent hover:opacity-95 text-white font-extrabold text-sm shadow-lg shadow-brand-600/35 transition-all flex items-center justify-center gap-2">
               <span>Send Inquiry to SAVVADI</span>
               <i data-lucide="send" class="w-4 h-4"></i>
             </button>
@@ -748,39 +894,108 @@
 
   </main>
 
+  <!-- SERVICE DETAILS MODAL (FULL MATTER EXPANSION) -->
+  <div id="serviceModal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-xl">
+    <div class="modal-content relative w-full max-w-2xl rounded-3xl bg-dark-card border border-dark-border shadow-2xl p-6 sm:p-10 max-h-[90vh] overflow-y-auto">
+      
+      <!-- Close Button -->
+      <button id="modalCloseBtn" aria-label="Close modal" class="absolute top-6 right-6 p-2 rounded-xl bg-dark-bg border border-dark-border text-slate-400 hover:text-white transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <!-- Badge & Title -->
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-300 text-xs font-extrabold uppercase tracking-wider mb-3 border border-brand-500/20" id="modalBadge">
+        Engineering
+      </div>
+      <h3 id="modalTitle" class="font-display font-black text-2xl sm:text-3xl text-white mb-2">
+        Website Development
+      </h3>
+      <p id="modalTagline" class="text-brand-300 text-sm sm:text-base font-medium mb-6">
+        Modern, responsive, and purpose-driven websites
+      </p>
+
+      <!-- Full Matter Description -->
+      <div class="prose prose-invert max-w-none text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+        <p id="modalDescription">
+          Detailed matter content will appear here...
+        </p>
+      </div>
+
+      <!-- Key Deliverables List -->
+      <div class="p-6 rounded-2xl bg-dark-bg/80 border border-dark-border mb-6">
+        <h4 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4 flex items-center gap-2">
+          <i data-lucide="check-circle" class="w-4 h-4 text-brand-accent"></i>
+          <span>What's Included & Deliverables</span>
+        </h4>
+        <ul id="modalDeliverables" class="space-y-3">
+          <!-- Populated by JS -->
+        </ul>
+      </div>
+
+      <!-- Ideal For -->
+      <div class="mb-8 text-xs sm:text-sm text-slate-400">
+        <strong class="text-white">Ideal For:</strong> <span id="modalIdealFor">Founders, brands, and creators</span>
+      </div>
+
+      <!-- Action Button inside Modal -->
+      <button id="modalCtaBtn" class="btn-shimmer w-full py-4 rounded-xl bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-500 hover:to-brand-400 text-white font-extrabold text-sm shadow-xl shadow-brand-600/30 flex items-center justify-center gap-2 transition-all">
+        <span>Inquire About This Service</span>
+        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- FLOATING QUICK ACTION DOCK (BOTTOM-RIGHT) -->
+  <aside aria-label="Quick contact links" class="fixed bottom-6 right-6 z-30 flex items-center gap-2 p-2 rounded-2xl bg-dark-card/90 border border-dark-border floating-dock shadow-2xl">
+    <a href="https://wa.me/918008226037?text=Hi%20SAVVADI,%20I'd%20like%20to%20discuss%20a%20project!" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-emerald-500/10 hover:bg-emerald-500 text-emerald-400 hover:text-white transition-all shadow-md" title="Chat on WhatsApp">
+      <i data-lucide="message-circle" class="w-5 h-5"></i>
+    </a>
+    <a href="tel:8008226037" class="p-3 rounded-xl bg-blue-500/10 hover:bg-blue-600 text-blue-400 hover:text-white transition-all shadow-md" title="Call SAVVADI">
+      <i data-lucide="phone" class="w-5 h-5"></i>
+    </a>
+    <a href="mailto:savvadi.studios@gmail.com?subject=Project%20Inquiry%20-%20SAVVADI" class="p-3 rounded-xl bg-brand-500/10 hover:bg-brand-600 text-brand-400 hover:text-white transition-all shadow-md" title="Email SAVVADI">
+      <i data-lucide="mail" class="w-5 h-5"></i>
+    </a>
+    <a href="https://instagram.com/savvadi_studios" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-pink-500/10 hover:bg-gradient-to-tr hover:from-purple-600 hover:to-pink-600 text-pink-400 hover:text-white transition-all shadow-md" title="Instagram">
+      <i data-lucide="instagram" class="w-5 h-5"></i>
+    </a>
+  </aside>
+
   <!-- FOOTER -->
   <footer class="border-t border-dark-border bg-dark-bg py-12 px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
       
       <!-- Brand & Tagline -->
       <div class="flex items-center gap-3">
-        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-accent flex items-center justify-center font-display font-extrabold text-white text-lg">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-accent flex items-center justify-center font-display font-black text-white text-lg">
           S
         </div>
         <div>
           <span class="font-display text-xl font-black tracking-wider text-white">SAVVADI</span>
-          <p class="text-xs text-slate-400">Make Your Story Heard.</p>
+          <p class="text-xs text-slate-400 font-medium">Make Your Story Heard.</p>
         </div>
       </div>
 
       <!-- Quick Nav -->
-      <div class="flex flex-wrap justify-center gap-6 text-xs font-medium text-slate-400">
+      <div class="flex flex-wrap justify-center gap-6 text-xs font-semibold text-slate-400">
         <a href="#about" class="hover:text-white transition-colors">About</a>
-        <a href="#services" class="hover:text-white transition-colors">Services</a>
-        <a href="#approach" class="hover:text-white transition-colors">Approach</a>
+        <a href="#services" class="hover:text-white transition-colors">Capabilities</a>
+        <a href="#approach" class="hover:text-white transition-colors">Our Approach</a>
         <a href="#vision" class="hover:text-white transition-colors">Vision</a>
+        <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
         <a href="#contact" class="hover:text-white transition-colors">Contact</a>
       </div>
 
-      <!-- Direct Contact info in Footer -->
-      <div class="text-xs text-slate-500">
+      <!-- Direct Copyright in Footer -->
+      <div class="text-xs text-slate-500 font-medium">
         &copy; <span id="currentYear"></span> SAVVADI. All rights reserved.
       </div>
     </div>
   </footer>
 
   <!-- Floating Toast Notification -->
-  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 px-4 py-3 rounded-xl bg-dark-card border border-brand-500/40 text-white shadow-2xl text-sm font-medium">
+  <div id="toast" class="fixed bottom-24 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 px-4 py-3 rounded-xl bg-dark-card border border-brand-500/40 text-white shadow-2xl text-sm font-bold">
     <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
     <span id="toastMsg">Action complete</span>
   </div>
